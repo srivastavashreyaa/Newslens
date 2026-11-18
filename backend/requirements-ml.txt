@@ -1,0 +1,9 @@
+-r requirements.txt
+# BERT / DistilBERT / DistilBART models (CPU build shown; use the CUDA wheel index for GPU)
+torch>=2.2
+transformers>=4.40
+sentencepiece
+# optional: full-article text extraction (FETCH_FULL_TEXT=true) and training script
+trafilatura
+pandas
+accelerate

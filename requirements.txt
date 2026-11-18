@@ -1,0 +1,17 @@
+# Streamlit Cloud installs this file. Lite NLP (VADER + extractive) – no model downloads, small memory footprint.
+streamlit>=1.50
+plotly>=5.24
+pandas>=2.2
+sqlalchemy>=2.0
+feedparser>=6.0
+httpx>=0.27
+scikit-learn>=1.4
+vaderSentiment>=3.3
+pydantic-settings>=2.2
+fastapi>=0.110
+
+# --- Optional: real DistilBERT sentiment + DistilBART summaries (needs more RAM than Streamlit Cloud's free tier may offer).
+# Uncomment, then set NLP_BACKEND="auto" in the app Secrets (or env var).
+# torch>=2.2
+# transformers>=4.40
+# sentencepiece

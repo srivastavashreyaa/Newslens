@@ -1,0 +1,10 @@
+# One-click deploy on Render (Blueprint): New + > Blueprint > pick this repo
+services:
+  - type: web
+    name: newslens
+    runtime: docker
+    plan: free
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: NLP_BACKEND
+        value: lite

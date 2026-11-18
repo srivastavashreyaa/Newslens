@@ -1,0 +1,11 @@
+[
+  {"name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "bias_prior": 0.0},
+  {"name": "The Guardian", "url": "https://www.theguardian.com/world/rss", "bias_prior": -0.5},
+  {"name": "NPR", "url": "https://feeds.npr.org/1001/rss.xml", "bias_prior": -0.3},
+  {"name": "Al Jazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "bias_prior": -0.25},
+  {"name": "Fox News", "url": "https://moxie.foxnews.com/google-publisher/latest.xml", "bias_prior": 0.7},
+  {"name": "New York Post", "url": "https://nypost.com/feed/", "bias_prior": 0.5},
+  {"name": "The Hindu", "url": "https://www.thehindu.com/news/national/feeder/default.rss", "bias_prior": -0.15},
+  {"name": "Times of India", "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms", "bias_prior": 0.1},
+  {"name": "TechCrunch", "url": "https://techcrunch.com/feed/", "bias_prior": 0.0}
+]

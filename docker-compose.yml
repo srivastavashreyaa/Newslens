@@ -1,0 +1,13 @@
+services:
+  backend:
+    build: { context: ./backend, args: { INSTALL_ML: "true" } }   # set "false" for the lightweight CPU-only backend
+    environment:
+      - NLP_BACKEND=auto
+      - DATABASE_URL=sqlite:////data/news.db
+    volumes: ["newsdata:/data", "hfcache:/root/.cache/huggingface"]
+    ports: ["8000:8000"]
+  frontend:
+    build: ./frontend
+    ports: ["8080:80"]
+    depends_on: [backend]
+volumes: { newsdata: {}, hfcache: {} }
